@@ -83,14 +83,44 @@ for (var i = 0; i < maxStars; i++) {
     new Star();
 }
 
-function animation() {
-    ctx.globalCompositeOperation = 'source-over';
-    ctx.globalAlpha = 0.8;
-    ctx.fillStyle = 'hsla(' + hue + ', 0%, 6%, 1)';
-    w = canvas.width = window.innerWidth
-    h = canvas.height = window.innerHeight
-    ctx.fillRect(0, 0, w, h)
+// function animation() {
+//     ctx.globalCompositeOperation = 'source-over';
+//     ctx.globalAlpha = 0.8;
+//     ctx.fillStyle = 'hsla(' + hue + ', 0%, 6%, 1)';
+//     w = canvas.width = window.innerWidth
+//     h = canvas.height = window.innerHeight
+//     ctx.fillRect(0, 0, w, h)
 
+//     ctx.globalCompositeOperation = 'lighter';
+//     for (var i = 1, l = stars.length; i < l; i++) {
+//         stars[i].draw();
+//     };
+
+//     window.requestAnimationFrame(animation);
+// }
+
+function animation() {
+    // Update canvas size to match display size
+    const displayWidth = canvas.clientWidth;
+    const displayHeight = canvas.clientHeight;
+    
+    if (canvas.width !== displayWidth || canvas.height !== displayHeight) {
+        w = canvas.width = displayWidth;
+        h = canvas.height = displayHeight;
+        
+        // Update star orbit centers when size changes
+        for (var i = 1, l = stars.length; i < l; i++) {
+            stars[i].orbitX = w / 2;
+            stars[i].orbitY = h / 2;
+        }
+    }
+
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.globalAlpha = 1.0;
+    ctx.fillStyle = '#000000';
+    ctx.fillRect(0, 0, w, h);
+    
+    ctx.globalAlpha = 0.8;
     ctx.globalCompositeOperation = 'lighter';
     for (var i = 1, l = stars.length; i < l; i++) {
         stars[i].draw();

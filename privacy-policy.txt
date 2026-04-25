@@ -1,0 +1,84 @@
+# Privacy Policy  
+**Recursion Computing, LLC**
+
+Recursion Computing, LLC (“we,” “us,” or “our”) operates services provided through **https://recursion.is** and its subdomains (the “Service”). This Privacy Policy explains how we collect, use, and disclose personal information when you use our Service. By using the Service, you agree to the collection and use of information in accordance with this policy.
+
+## 1. Information We Collect
+We may collect personally identifiable information (“Personal Information”) only when you voluntarily provide it, including but not limited to:
+- Name
+- Phone number
+- Postal address  
+We use this information to contact or identify you and to provide and improve our Service.
+
+## 2. Use of Third-Party Service Providers
+We may employ third-party companies and individuals to:
+- Facilitate our Service
+- Provide the Service on our behalf
+- Perform service-related functions
+- Analyze usage of our Service  
+These third parties may have access to your Personal Information only to perform specific tasks on our behalf and are obligated not to disclose or use it for any other purpose.
+
+## 3. Data Security
+We use commercially reasonable measures to protect your Personal Information; however:
+- No method of transmission over the Internet is 100% secure
+- No method of electronic storage is 100% secure  
+We cannot guarantee absolute security.
+
+## 4. Links to Third-Party Sites
+Our Service may contain links to external websites not operated by us:
+- We are not responsible for their content or privacy practices
+- We recommend reviewing their policies before providing any personal information
+
+## 5. Children’s Privacy
+Our Service is not intended for individuals under the age of 13:
+- We do not knowingly collect Personal Information from children under 13
+- We will delete such information if discovered  
+If you are a parent or guardian and believe your child has provided Personal Information, please contact us.
+
+## 6. Changes to This Privacy Policy
+We may update this Privacy Policy periodically:
+- Changes will be posted on this page
+- Updates are effective immediately upon posting  
+Continued use of the Service constitutes acceptance of any updates.
+
+## 7. Contact Us
+If you have questions or suggestions about this Privacy Policy:
+- Email: **help@recursion.is**
+
+# Disclaimers
+
+## Informational Use Only
+This website is not intended to be a primary or authoritative source:
+- We strive for accuracy but make no guarantees regarding completeness or reliability
+
+## Ongoing Work and Corrections
+This project is continuously evolving:
+- Content may contain assumptions or errors
+- Information may be incomplete or subject to revision
+- Corrections may occur over time  
+If you have questions or wish to challenge any content, you are encouraged to reach out.
+
+## Updates and Metadata
+- Modification dates may not reflect real-time updates
+- Accurate update information may be stored in metadata
+
+## Intellectual Property
+- Third-party content remains the property of its respective copyright holders
+- Recursion Computing, LLC is not affiliated with other companies unless explicitly stated
+- Assets are not sold or authorized by other entities unless specified
+
+## License
+Unless otherwise noted, all original content is licensed under:
+- **Creative Commons Attribution 4.0 International License (CC BY 4.0)**
+- http://creativecommons.org/licenses/by/4.0/  
+You are free to:
+- Share and adapt the material
+- Use it for any purpose  
+**Provided that proper attribution is given**
+
+## Philosophy
+We believe knowledge should be freely accessible:
+- Learning
+- Collaboration
+- Open sharing  
+Attribution is required when using this work.

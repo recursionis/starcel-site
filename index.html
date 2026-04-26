@@ -274,11 +274,13 @@
       <h2 style="color:white">Quick Links</h2>
       <a class="btn btn-link" href="https://recursion.is"><img style="width:90px;"
           src="Recursion Logo White.svg"></a>
-      <a class="btn btn-link" href="https://recursion.is/youtube">YouTube</a>
-      <a class="btn btn-link" href="mailto:info@recursion.is">Contact Us</a>
-      <a class="btn btn-link" href="privacy-policy.txt">Privacy Policy</a>
-      <a class="btn btn-link" href="mailto:help@recursion.is">Support</a>
-      <a class="btn btn-link" href="https://patreon.com/RecursionIs">Donate</a>
+      <div class="footer-links">
+        <a class="btn btn-link" href="https://recursion.is/youtube">YouTube</a>
+        <a class="btn btn-link" href="mailto:info@recursion.is">Contact Us</a>
+        <a class="btn btn-link" href="privacy-policy.txt">Privacy Policy</a>
+        <a class="btn btn-link" href="mailto:help@recursion.is">Support</a>
+        <a class="btn btn-link" href="https://patreon.com/RecursionIs">Donate</a>
+      </div>
     </div>
   </section>
 
@@ -488,6 +490,12 @@
       display: inline-block;
       padding: 20px 30px 9px;
       zoom: 0.75;
+    }
+
+    .footer .footer-links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
     }
 
     .footer .btn.btn-link {

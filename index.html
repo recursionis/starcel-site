@@ -61,7 +61,7 @@
       <h2 class="" style="padding:45px 30px 20px 30px;color:white">Demo Video</h2>
       <div id="center">
         <iframe width="1600px" height="900px" style="display:inline-block;align-items: center;"
-          src="https://www.youtube.com/embed/pbcRpq36v4U?si=mZd63oFvik-_wWsL" title="YouTube video player"
+          src="https://www.youtube.com/embed/rJuRTZOE99g" title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
@@ -112,7 +112,18 @@
           <h2>Multidimensional Spreadsheets, Arrays, <br>Matrices, and Tensors</h2>
           Full nD Calculation Engine, Python functions in cells, <br>and Python support for cell references (A1:B3)
         </section>
-
+        <section id="infocard">
+          <img src="images/backgrounds.png" alt="" width="400px" />
+          <h2>Set a Sky, Color, Image, or Video Background</h2>
+        </section>
+        <section id="infocard">
+          <img src="images/commands.png" alt="" width="400px" />
+          <h2>Call Programming Languages, Unix Commands, <br>and Terminal Commands</h2>
+        </section>
+        <section id="infocard">
+          <img src="images/3dwallpaper.png" alt="" width="400px" />
+          <h2>Use Starcel as a 3D interactive desktop <br>wallpaper<h2>
+        </section>
       </div>
     </div>
   </section>
@@ -174,17 +185,24 @@
     </div>
   </div>
           <section id="download">
-      <a href="https://github.com/recursionis/starcel/releases/"
-        style="font-size:2em;text-decoration:none;">Download Windows x64</a>
-      <br>
+      <h2>Install (Windows x64)</h2>
       <p>
-        A quick note on this release: To submit a cell you will have to type ctrl+NUM*. This is because unreal engine
-        did not allow capturing of ctrl+enter. It also has an engine bug where I would need to restart the entire
-        project in order to fix the extra click needed to select and move objects. Currently, objects spawned will match
-        your character rotation and scaling; this makes for spammy looking scenes, so we will eventually add
-        autosnapping and alignment tools. AR and XR support coming soon. I am told there is a Fatal Error when trying to
-        start the program on some systems, this issue will not be in the next release; Starcel is switching code
-        platforms entirely. Unfortunately, it will be a while before you see an update. Enjoy!
+        First, download and install
+        <a href="https://www.python.org/downloads/release/python-3913/" style="text-decoration:none;">Python 3.9.13</a>.
+        Then run:
+      </p>
+      <pre style="text-align:left;background:#1e1e1e;color:#d4d4d4;padding:1em 1.25em;border-radius:6px;overflow-x:auto;font-size:0.9em;line-height:1.6;"><code>python -m pip install --upgrade pip
+python -m pip install starcel
+python -m starcel install
+
+# Starcel executable:
+C:\Users\Nick\Documents\Starcel\WindowsNoEditor\Starcel9.exe
+
+# Scripts folder:
+C:\Users\Nick\Documents\Starcel\WindowsNoEditor\Starcel9\Content\Scripts</code></pre>
+      <p>
+        If you want to edit the Unreal Engine project directly, watch
+        <a href="https://youtube.com/c/recursionis" style="text-decoration:none;">this video</a>.
       </p>
     </section>
 
@@ -214,7 +232,7 @@
         <h2>Want to help or support the project?</h2>
         <p>
           You can submit a changes as a pull request to the project on <a
-            style="text-decoration:none;" href="https://github.com/nicholasmaleki/starcel-ue4">GitHub</a>
+            style="text-decoration:none;" href="https://github.com/recursionis/starcel">GitHub</a>
         </p>
       </div>
     <section id="donate">
@@ -230,20 +248,20 @@
     <div class="footer">
       <h2 style="color:white">Quick Links</h2>
       <div class="footer-links">
-        <a class="btn btn-link" href="https://recursion.is"><img style="width:90px;"
+        <a class="btn btn-link" href="https://recursionis.github.io"><img style="width:5.5em;"
             src="Recursion Logo White.svg"></a>
-        <a class="btn btn-link" href="https://recursion.is/youtube">YouTube</a>
+        <a class="btn btn-link" href="https://youtube.com/c/recursionis">YouTube</a>
         <a class="btn btn-link" href="https://patreon.com/RecursionIs">Donate</a>
         <a class="btn btn-link" href="privacy-policy.txt">Privacy Policy</a>
-        <a class="btn btn-link" href="mailto:info@recursion.is">Contact Us</a>
-        <a class="btn btn-link" href="mailto:help@recursion.is">Support</a>
+        <a class="btn btn-link" href="mailto:info@starcel.net">Contact Us</a>
+        <a class="btn btn-link" href="mailto:help@starcel.net">Support</a>
       </div>
     </div>
   </section>
 
   <div class="copyright bar" style="background: #000000; color:white; font-size:.8em;font-weight:lighter">
     &nbsp;© Copyright Recursion Computing LLC, 2026. All rights reserved. Designed by <a
-      style="color:white; text-decoration:none;" href="https://nickmaleki.com">Nick Maleki</a>
+      style="color:white; text-decoration:none;" href="https://github.com/nicholasmaleki">Nick Maleki</a>
   </div>
 
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script> -->
@@ -379,6 +397,48 @@
   <style>
     #infocard {
       padding: 30px 30px 30px 30px;
+      box-sizing: border-box;
+      max-width: 100%;
+    }
+
+    #infocard img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #demo iframe {
+      max-width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+    }
+
+    @media (max-width: 768px) {
+      .row {
+        padding: 20px 0;
+      }
+
+      #infocard {
+        padding: 20px 16px;
+        width: 100%;
+      }
+
+      #demo h2 {
+        padding: 30px 16px 16px !important;
+      }
+
+      #content section {
+        padding: 30px 16px;
+      }
+
+      #content p {
+        overflow-wrap: anywhere;
+      }
+
+      a.goto-next {
+        left: auto;
+        right: 0;
+        margin: 0;
+      }
     }
 
     .row {
@@ -587,6 +647,19 @@
 
     #myImage {
       scale: 0;
+    }
+
+    /* On portrait/narrow screens 25vw x 25vh is taller than wide, which
+       makes the WebGL logo camera crop the sides. Keep a 16:9 box instead. */
+    @media (max-width: 768px), (max-aspect-ratio: 1/1) {
+      #center2 {
+        scale: 1;
+      }
+
+      #imageContainer {
+        width: 80vw;
+        height: calc(80vw * 9 / 16);
+      }
     }
 
     b {
